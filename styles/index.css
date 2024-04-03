@@ -1,3 +1,91 @@
-h1 {
-  color: red;
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Medium.ttf) format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: 500;
+}
+
+body {
+  background-color: #1f2937;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  padding: 0rem 6rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+.logo-container h1 {
+  color: #f9faf8;
+  font-size: 24px;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 400;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  align-items: flex-start;
+  gap: 1rem;
+  height: 30vh;
+}
+.hero-left h1 {
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: bold;
+  color: #f9faf8;
+  margin-top: 0;
+  padding-top: 0;
+}
+.hero-left p {
+  color: #e5e7eb;
+}
+.hero-left button {
+  background-color: #3882f6;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+.hero-right img {
+  height: 100%;
 }
