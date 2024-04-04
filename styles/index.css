@@ -1,3 +1,284 @@
-h1 {
-  color: red;
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+/* ------------ MAIN SECTION ------------- */
+
+.about__container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.about__info
+{
+  padding: 1em;
+  margin: 3em 1em 3em 1em;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 80%;
+}
+
+.about__slogan
+{
+  text-align: center;
+}
+
+.about__text
+{
+  padding: 1em;
+  margin: 1em;
+  font-size: 2em;
+}
+
+.wave
+{
+  /* border: 1px solid blue; */
+  width: 100%;
+}
+
+/* ------------- EXPERIENCE SECTION --------------- */
+
+.experience
+{
+  padding: 3em;
+  border: 3px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience__container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  /* border: 1px solid red; */
+  /* width: 60vw; */
+  height: 60%;
+}
+
+.experience__phrase
+{
+  /* border: 1px solid red; */
+  padding: 1em;
+  width: 70%;
+}
+
+.experience__phrase h2
+{
+  font-size: 3em;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.experience__text
+{
+  width: 60%;
+}
+
+.experience__text p
+{
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  color: gray;
+}
+
+/* ------------ SKILLS SECTION -------------- */
+
+.skills
+{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+}
+
+.skills__container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+}
+
+.skills__item
+{
+  padding: 3em;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.skills__item i
+{
+  font-size: 4em;
+  color: gray;
+}
+
+.skills__item h3
+{
+  font-size: 1.5em;
+}
+
+.skills__item p
+{
+  line-height: 1.5em;
+  font-size: 1.2em;
+  text-align: center;
+  color: gray;
+  font-weight: bold;
+}
+
+/* --------------- TEAM SECTION -------------- */
+
+.team
+{
+  display: flex;
+  /* border: 1px solid red; */
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  gap: 2em;
+}
+
+.team__card
+{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  padding: 2em;
+  width: 25%;
+}
+
+.team__image
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid blue; */
+  padding: 1em;
+  margin: 1em;
+  gap: 1em;
+}
+
+.team__image div
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team__image i
+{
+  font-size: 3em;
+  color: rgba(0, 0, 0, 0.694);
+}
+
+.team__image span
+{
+  font-size: 1.4em;
+  color: gray;
+  font-weight: bold;
+}
+
+.team__description
+{
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.team__description p
+{
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: gray;
+}
+
+/* -------------- RESPONSIVE DESIGN -------------- */
+
+/* ... */
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px)
+{
+  .wave
+  {
+    border: 1px solid blue;
+    height: 30%;
+  }
+
+  .about__text h1
+  {
+    font-size: 1.3em;
+  }
+
+  /* ----------- EXPERIENCE SECTION ------------- */
+
+  .experience__container
+  {
+    border: 1px solid red;
+    height: 50%;
+  }
+
+  .experience__phrase h2
+  {
+    font-size: 2em;
+  }
+
+  /* SKILLS SECTION */
+
+  .skills
+  {
+    border: 1px solid blue;
+    padding: 2em;
+  }
+
+  .skills__container
+  {
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .skills__item
+  {
+    border: 1px solid black;
+    width: 50%;
+  }
+
+  .team
+  {
+    margin: 2em;
+    border: 1px solid red;
+    flex-direction: column;
+  }
+
+  .team__card
+  {
+    border: 1px solid blue;
+    width: 60%;
+  }
+
+}
+
