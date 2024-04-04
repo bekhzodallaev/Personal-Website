@@ -47,6 +47,7 @@ SPACING SYSTEM
 
 2/4/6/8/ 12/ 16/ 24/ 36/ 48/ 60/ 72/ 84 / 96 
 
+8
 16
 84
 36
@@ -63,6 +64,20 @@ LETTER SPACING
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem;
+}
+
+.skip-link {
+    position: absolute;
+    top: -4.5rem;
+    left: 0;
+    background: #F9FAF8;
+    color: #1F2937;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 .logo-image {
@@ -164,6 +179,11 @@ main {
     background-color: #1F2937;
 }
 
+.footer-navigation {
+    float: right;
+}
+
 .copyright {
     text-align: center;
+    font-size: 1.8rem;
 }
