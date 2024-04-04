@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+
+}
+
+
+/* 
+FONT-SIZE SYSTEM
+
+12.8/16/20/25/31.3/39.1/48.8
+
+1.8rem
+2.4rem
+
+
+
+PRIMARY COLOR: #1F2937
+
+
+
+TINTS AND SHADES
+
+
+tints
+#E5E7EB
+#F9FAF8
+
+shades
+#1F2937
+
+
+greys
+
+SPACING SYSTEM
+
+2/4/6/8/ 12/ 16/ 24/ 36/ 48/ 60/ 72/ 84 / 96 
+
+*/
+
+/* HEADER */
+.logo {
+    font-size: 2.4rem;
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+
+header {
+    background-color: blue;
+}
+
+main {
+    background-color: coral;
+}
+
+section {
+    background-color: darkslategrey;
+}
+
+footer {
+    background-color: gainsboro;
+}
