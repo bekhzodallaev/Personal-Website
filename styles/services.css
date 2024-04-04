@@ -62,12 +62,12 @@ LETTER SPACING
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 0.8rem;
 }
 
 .logo-image {
     height: auto;
-    width: 100px;
+    width: 4.1rem;
 }
 
 .logo {
@@ -110,12 +110,12 @@ LETTER SPACING
 }
 
 main {
-    background-color: coral;
+    /* background-color: coral; */
 }
 
 .container {
     max-width: 120rem;
-    background-color: darkslategray;
+    /* background-color: darkslategray; */
     margin: 0 auto;
     padding: 8.4rem;
 }
@@ -129,7 +129,7 @@ main {
     display: flex;
     padding: 4.8rem 6rem;
     gap: 4.8rem;
-    background-color: burlywood;
+    /* background-color: burlywood; */
 
 }
 
@@ -154,10 +154,16 @@ main {
 
 .service-image {
     height: auto;
-    width: 41rem;
+    width: 38rem;
     border-radius: 1.6rem;
 }
 
-footer {
-    background-color: gainsboro;
+.footer {
+
+    color: #F9FAF8;
+    background-color: #1F2937;
+}
+
+.copyright {
+    text-align: center;
 }
