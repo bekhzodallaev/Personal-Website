@@ -24,7 +24,8 @@ FONT-SIZE SYSTEM
 2.4rem
 39
 
-
+LINE HEIGHT
+1.6
 
 PRIMARY COLOR: #1F2937
 
@@ -53,7 +54,7 @@ SPACING SYSTEM
 36
 
 LETTER SPACING
-1.6
+-0.3px
 
 */
 
@@ -82,7 +83,7 @@ LETTER SPACING
 
 .logo-image {
     height: auto;
-    width: 4.1rem;
+    max-width: 4.1rem;
 }
 
 .logo {
@@ -124,9 +125,6 @@ LETTER SPACING
     color: #E5E7EB;
 }
 
-main {
-    /* background-color: coral; */
-}
 
 .container {
     max-width: 120rem;
@@ -138,6 +136,7 @@ main {
 .secondary-heading {
     font-size: 4.8rem;
     margin-bottom: 3.6rem;
+    letter-spacing: -0.3px;
 }
 
 .services {
@@ -159,7 +158,7 @@ main {
 
 .services-text {
     margin-bottom: 2.4rem;
-    letter-spacing: 1.6;
+    line-height: 1.6;
 }
 
 .services-list {
@@ -169,12 +168,11 @@ main {
 
 .service-image {
     height: auto;
-    width: 38rem;
+    max-width: 38rem;
     border-radius: 1.6rem;
 }
 
 .footer {
-
     color: #F9FAF8;
     background-color: #1F2937;
 }
