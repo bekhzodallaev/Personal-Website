@@ -49,10 +49,11 @@ SPACING SYSTEM
 */
 
 /* HEADER */
-header {
-    background-color: blue;
+.header {
+    background-color: #1F2937;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo-image {
@@ -69,16 +70,34 @@ header {
     align-items: center;
 }
 
-
 .logo-link:link,
-.logo-link:visited {}
+.logo-link:visited {
+    text-decoration: none;
+    color: #F9FAF8;
+}
 
 .logo-link:active,
-.logo-link:hover {}
+.logo-link:hover {
+    color: #E5E7EB;
+}
 
 .navigation {
     list-style-type: none;
     display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.nav-link:link,
+.nav-link:active {
+    text-decoration: none;
+    color: #F9FAF8;
+    font-size: 2.4rem;
+}
+
+.nav-link:active,
+.nav-link:hover {
+    color: #E5E7EB;
 }
 
 
