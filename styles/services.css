@@ -52,6 +52,7 @@ SPACING SYSTEM
 36
 
 LETTER SPACING
+1.6
 
 */
 
@@ -120,15 +121,25 @@ main {
 }
 
 .secondary-heading {
-    font-size: 3.9rem;
+    font-size: 4.8rem;
     margin-bottom: 3.6rem;
 }
 
 .services {
     display: flex;
-    padding: 3.6rem 6rem;
-    gap: 3.6rem;
+    padding: 4.8rem 6rem;
+    gap: 4.8rem;
     background-color: burlywood;
+
+}
+
+.services:first-child {
+    padding-top: 0;
+}
+
+.tertiary-heading {
+    font-size: 3.6rem;
+    margin-bottom: 2.4rem;
 }
 
 .services-text {
@@ -143,7 +154,8 @@ main {
 
 .service-image {
     height: auto;
-    width: 60rem;
+    width: 41rem;
+    border-radius: 1.6rem;
 }
 
 footer {
