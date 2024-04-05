@@ -11,7 +11,7 @@ html {
 body {
     font-family: "Roboto", sans-serif;
     font-size: 2.4rem;
-
+    color: #333
 }
 
 
@@ -44,6 +44,7 @@ shades
 
 
 greys
+#333
 
 SPACING SYSTEM
 
@@ -179,7 +180,8 @@ LETTER SPACING
 }
 
 .footer-navigation {
-    float: right;
+    margin-left: auto;
+    max-width: 25.1rem;
 }
 
 .copyright {
