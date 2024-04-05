@@ -78,8 +78,8 @@
 /*  TABLETS 740px */
 @media(max-width:47em) {
     .container {
-        max-width: 76rem;
-        padding: 6rem 3.6rem;
+        max-width: 65rem;
+        padding: 4.8rem 2.4rem;
     }
 
 
@@ -107,8 +107,8 @@
     }
 
     .service-image {
-        max-width: 7rem;
-        border-radius: 0.8rem;
+        max-width: 4.7rem;
+        border-radius: 0.6rem;
     }
 
     .copyright {
