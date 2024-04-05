@@ -106,6 +106,8 @@ LETTER SPACING
 .logo-link:active,
 .logo-link:hover {
     color: #E5E7EB;
+    text-decoration: dotted;
+    transition: all 0.3ms ease-in;
 }
 
 .navigation {
@@ -125,6 +127,7 @@ LETTER SPACING
 .nav-link:active,
 .nav-link:hover {
     color: #E5E7EB;
+    transition: all 0.3ms ease-in;
 }
 
 
