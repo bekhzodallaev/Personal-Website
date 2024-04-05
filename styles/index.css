@@ -62,9 +62,14 @@ header {
   color: #f9faf8;
   font-size: 24px;
 }
+.info-box p {
+  margin: 1rem;
+}
 nav ul {
   display: flex;
   gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 nav ul li {
   list-style: none;
@@ -73,6 +78,22 @@ nav ul li a {
   text-decoration: none;
   color: #e5e7eb;
   font-weight: 400;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: #3882f6;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
 }
 .hero {
   display: flex;
@@ -206,4 +227,101 @@ nav ul li a {
   background-color: #3882f6;
   border: 2px solid #fff;
   border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 699px) {
+  .checkbtn {
+    display: block;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-container {
+    justify-content: flex-start;
+  }
+  .hamburger {
+    position: fixed;
+    right: 0;
+    top: 2rem;
+  }
+  nav ul {
+    position: fixed;
+    top: 100px;
+    flex-direction: column;
+    transition: all 0.5s;
+    background-color: #00000039;
+    width: 100%;
+    left: 0;
+    display: none;
+  }
+  #check:checked ~ ul {
+    left: -100px;
+  }
+  .first-page {
+    margin: 0rem 1rem;
+    height: auto;
+  }
+  .hero {
+    flex-direction: column;
+    margin: 8rem 0rem 3rem;
+  }
+  .hero-left {
+    order: -1;
+  }
+  .hero-right {
+    width: 100%;
+  }
+  .hero-right img {
+    width: 100%;
+  }
+  .information-section h1 {
+    font-size: 24px;
+  }
+  .info-container {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .info-box {
+    width: 100%;
+    /* border: 1px solid #3882f6; */
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .info-box .img-container {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero-left h1 {
+    font-size: 36px;
+  }
+  .quote-section {
+    margin: 2rem 0rem;
+    padding: 0;
+    width: 100%;
+  }
+  .quote-section .background-container {
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+  }
+  .action-section {
+    margin: 3rem 0rem;
+  }
+  .action-container {
+    margin: 0rem;
+    flex-direction: column;
+  }
+  .information-section {
+    margin-top: 4rem;
+  }
 }
