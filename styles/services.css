@@ -8,8 +8,37 @@ html {
     font-size: 62.5%;
 }
 
+@font-face {
+    font-family: "RobotoBlack";
+    src: url("../fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../fonts/Roboto-Medium.ttf");
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "RobotoThin";
+    src: url(../fonts/Roboto-Thin.ttf);
+
+}
+
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Regular", sans-serif;
     font-size: 2.4rem;
     color: #333
 }
@@ -59,12 +88,16 @@ LETTER SPACING
 
 */
 
+
+
 .header {
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem;
+    padding: 3.2rem 1.2rem;
+
 }
 
 .skip-link {
@@ -83,7 +116,8 @@ LETTER SPACING
 
 .logo-image {
     height: auto;
-    max-width: 4.1rem;
+    max-width: 6rem;
+    border-radius: 13rem;
 }
 
 .logo {
@@ -93,6 +127,7 @@ LETTER SPACING
 .logo-link {
     display: flex;
     align-items: center;
+    gap: 0.8rem;
 }
 
 .logo-link:link,
@@ -105,21 +140,23 @@ LETTER SPACING
 .logo-link:hover {
     color: #E5E7EB;
     text-decoration: dotted;
-    transition: all 0.3ms ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .navigation {
     list-style-type: none;
     display: flex;
-    gap: 1.6rem;
+    gap: 3.2rem;
     align-items: center;
 }
 
 .nav-link:link,
 .nav-link:active {
+    font-family: "RobotoBold";
     text-decoration: none;
     color: #F9FAF8;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 
 .nav-link:active,
