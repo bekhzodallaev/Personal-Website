@@ -9,7 +9,7 @@
   font-weight: bold;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "RobotoRegular";
   src: url(../fonts/Roboto-Regular.ttf) format("truetype");
   font-weight: 500;
 }
@@ -76,8 +76,11 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
+  font-family: "RobotoRegular";
+  font-weight: 500;
   color: #e5e7eb;
   font-weight: 400;
+  font-size: 18px;
 }
 nav ul li a.active,
 nav ul li a:hover {
@@ -120,6 +123,9 @@ nav ul li a:hover {
 }
 .hero-left p {
   color: #e5e7eb;
+  font-size: 18px;
+  font-family: "RobotoRegular", sans-serif;
+  font-weight: 500;
 }
 .hero-left button {
   background-color: #3882f6;
@@ -127,8 +133,9 @@ nav ul li a:hover {
   border: none;
   border-radius: 10px;
   padding: 0.5rem 1rem;
-  width: 100px;
+  width: 150px;
   outline: none;
+  font-size: 1rem;
 }
 .hero-right {
   height: 350px;
@@ -141,9 +148,13 @@ nav ul li a:hover {
   width: 100%;
   justify-content: space-between;
   padding: 0rem 6rem;
+  flex-wrap: wrap;
 }
 .info-box {
   width: 300px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
 }
 .info-box p {
   font-family: "Roboto-Normal", sans-serif;
@@ -154,6 +165,8 @@ nav ul li a:hover {
   border-radius: 10px;
   overflow: hidden;
   height: 200px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .img-container img {
   width: 100%;
@@ -186,7 +199,6 @@ nav ul li a:hover {
 .background-container {
   background-color: #e5e7eb;
   color: #1f2937;
-  height: 30vh;
   padding: 4rem;
 }
 .background-container p {
@@ -209,9 +221,13 @@ nav ul li a:hover {
   padding: 3rem;
   border-radius: 10px;
   align-items: center;
+  gap: 4rem;
 }
 .action-left p {
   color: #e5e7eb;
+  font-size: 18px;
+  font-family: "RobotoRegular", sans-serif;
+  font-weight: 500;
 }
 .footer-section {
   background-color: #1f2937;
@@ -227,12 +243,17 @@ nav ul li a:hover {
   background-color: #3882f6;
   border: 2px solid #fff;
   border-radius: 10px;
+  width: 150px;
+  font-size: 1rem;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 699px) {
   .checkbtn {
     display: block;
+    position: fixed;
+    right: 0;
+    top: 2rem;
   }
   header {
     display: flex;
@@ -241,23 +262,19 @@ nav ul li a:hover {
   .logo-container {
     justify-content: flex-start;
   }
-  .hamburger {
-    position: fixed;
-    right: 0;
-    top: 2rem;
-  }
-  nav ul {
+
+  ul {
     position: fixed;
     top: 100px;
     flex-direction: column;
-    transition: all 0.5s;
-    background-color: #00000039;
+    background-color: #00000063;
     width: 100%;
-    left: 0;
-    display: none;
+    left: -100%;
+    padding: 1rem 0rem;
+    transition: all 0.5s;
   }
   #check:checked ~ ul {
-    left: -100px;
+    left: 0;
   }
   .first-page {
     margin: 0rem 1rem;
@@ -289,14 +306,9 @@ nav ul li a:hover {
   .info-box {
     width: 100%;
     /* border: 1px solid #3882f6; */
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
   .info-box .img-container {
     width: 100%;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
   }
   .hero {
     height: auto;
@@ -323,5 +335,10 @@ nav ul li a:hover {
   }
   .information-section {
     margin-top: 4rem;
+  }
+  .hero-left p,
+  .action-left p,
+  nav ul li a {
+    font-size: 16px;
   }
 }
