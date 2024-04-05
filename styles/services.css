@@ -14,7 +14,6 @@ body {
     color: #333
 }
 
-
 /* 
 FONT-SIZE SYSTEM
 
@@ -60,7 +59,6 @@ LETTER SPACING
 
 */
 
-/* HEADER */
 .header {
     background-color: #1F2937;
     display: flex;
@@ -130,10 +128,8 @@ LETTER SPACING
     transition: all 0.3ms ease-in;
 }
 
-
 .container {
     max-width: 120rem;
-    /* background-color: darkslategray; */
     margin: 0 auto;
     padding: 8.4rem;
 }
@@ -148,8 +144,6 @@ LETTER SPACING
     display: flex;
     padding: 4.8rem 6rem;
     gap: 4.8rem;
-    /* background-color: burlywood; */
-
 }
 
 .services:first-child {
