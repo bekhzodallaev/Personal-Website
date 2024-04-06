@@ -13,20 +13,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
 }
-
+/* #1f2937 */
 .about__info
 {
   padding: 1em;
   margin: 3em 1em 3em 1em;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 50%;
   height: 80%;
+  font-family: 'Roboto';
+  background-color: #e5e7eb;
+  border-radius: 10px;
 }
 
 .about__slogan
@@ -34,11 +35,24 @@
   text-align: center;
 }
 
+.about__slogan h1
+{
+  color: #1f2937dd;
+}
+
 .about__text
 {
   padding: 1em;
   margin: 1em;
   font-size: 2em;
+  text-align: center;
+}
+
+.about__text h1
+{
+  font-size: 1.3em;
+  color: gray;
+  font-weight: 400;
 }
 
 .wave
@@ -52,7 +66,6 @@
 .experience
 {
   padding: 3em;
-  border: 3px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,9 +78,9 @@
   align-items: center;
   justify-content: center;
   gap: 1em;
-  /* border: 1px solid red; */
-  /* width: 60vw; */
   height: 60%;
+  margin-bottom: 5em;
+  text-align: center;
 }
 
 .experience__phrase
@@ -82,6 +95,7 @@
   font-size: 3em;
   text-align: center;
   line-height: 1.3em;
+  color: #1f2937dd;
 }
 
 .experience__text
@@ -107,6 +121,7 @@
   align-items: center;
   justify-content: center;
   gap: 5em;
+  background-color: #E5E7EB;
 }
 
 .skills__container
@@ -126,6 +141,7 @@
   align-items: center;
   justify-content: center;
   gap: 1em;
+  text-align: center;
 }
 
 .skills__item i
@@ -137,6 +153,8 @@
 .skills__item h3
 {
   font-size: 1.5em;
+  color: gray;
+  font-weight: bold;
 }
 
 .skills__item p
@@ -145,15 +163,12 @@
   font-size: 1.2em;
   text-align: center;
   color: gray;
-  font-weight: bold;
 }
 
 /* --------------- TEAM SECTION -------------- */
-
 .team
 {
   display: flex;
-  /* border: 1px solid red; */
   height: 50%;
   justify-content: center;
   align-items: center;
@@ -165,9 +180,8 @@
 {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
+  align-items: center;
   padding: 2em;
-  width: 25%;
 }
 
 .team__image
@@ -176,7 +190,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid blue; */
   padding: 1em;
   margin: 1em;
   gap: 1em;
@@ -188,6 +201,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .team__image i
@@ -225,20 +239,23 @@
 {
   .wave
   {
-    border: 1px solid blue;
     height: 30%;
   }
 
   .about__text h1
   {
-    font-size: 1.3em;
+    font-size: 0.6em;
+  }
+
+  .wave
+  {
+    display: none;
   }
 
   /* ----------- EXPERIENCE SECTION ------------- */
 
   .experience__container
   {
-    border: 1px solid red;
     height: 50%;
   }
 
@@ -251,7 +268,6 @@
 
   .skills
   {
-    border: 1px solid blue;
     padding: 2em;
   }
 
@@ -263,20 +279,17 @@
 
   .skills__item
   {
-    border: 1px solid black;
     width: 50%;
   }
 
   .team
   {
     margin: 2em;
-    border: 1px solid red;
     flex-direction: column;
   }
 
   .team__card
   {
-    border: 1px solid blue;
     width: 60%;
   }
 
