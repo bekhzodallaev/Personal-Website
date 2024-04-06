@@ -15,7 +15,7 @@ html {
 
 @font-face {
     font-family: "RobotoBold";
-    src: url(../fonts/Roboto-Bold.ttf);
+    src: url("../fonts/Roboto-Bold.ttf");
     font-weight: bold;
 }
 
@@ -123,6 +123,7 @@ body {
 }
 
 .secondary-heading {
+    font-family: "RobotoBold";
     font-size: 4.8rem;
     margin-bottom: 3.6rem;
     letter-spacing: -0.3px;
