@@ -253,7 +253,6 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 699.9px) {
   .checkbtn {
     display: block;
@@ -264,6 +263,14 @@ nav ul li a:hover {
   header {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    background-color: #1f2937;
+    top: 0;
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    height: 20vh;
+    left: 0;
   }
   .logo-container {
     justify-content: flex-start;
@@ -351,8 +358,23 @@ nav ul li a:hover {
   nav ul li a {
     font-size: 16px;
   }
+  .footer-section p {
+    margin: 1rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .action-container {
+    padding: 1.5rem 1rem;
+    justify-content: center;
+  }
+  .action-left h1,
+  .action-left p {
+    text-align: center;
+  }
+  .action-section {
+    padding: 1rem;
+  }
 }
-/* Tablet Design */
 
 @media screen and (min-width: 700px) and (max-width: 1096px) {
   .first-page {
@@ -370,6 +392,9 @@ nav ul li a:hover {
   }
   .hero-left h1 {
     font-size: 40px;
+  }
+  .hero-left button {
+    width: 120px;
   }
   .hero-right {
     width: 100%;
@@ -400,6 +425,9 @@ nav ul li a:hover {
   }
   .action-container {
     margin: 3rem;
+  }
+  .action-right button {
+    width: 120px;
   }
 }
 
