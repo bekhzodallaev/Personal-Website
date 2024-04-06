@@ -9,7 +9,7 @@
   font-weight: bold;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "RobotoRegular";
   src: url(../fonts/Roboto-Regular.ttf) format("truetype");
   font-weight: 500;
 }
@@ -27,6 +27,9 @@
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+}
+img {
+  object-fit: cover;
 }
 body {
   margin: 0;
@@ -76,8 +79,11 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
+  font-family: "RobotoRegular";
+  font-weight: 500;
   color: #e5e7eb;
   font-weight: 400;
+  font-size: 18px;
 }
 nav ul li a.active,
 nav ul li a:hover {
@@ -103,11 +109,13 @@ nav ul li a:hover {
   gap: 1rem;
   height: 350px;
   margin-bottom: 6rem;
+  flex-wrap: wrap;
 }
 .hero-left {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  flex: 1;
 }
 
 .hero-left h1 {
@@ -120,6 +128,9 @@ nav ul li a:hover {
 }
 .hero-left p {
   color: #e5e7eb;
+  font-size: 18px;
+  font-family: "RobotoRegular", sans-serif;
+  font-weight: 500;
 }
 .hero-left button {
   background-color: #3882f6;
@@ -127,11 +138,13 @@ nav ul li a:hover {
   border: none;
   border-radius: 10px;
   padding: 0.5rem 1rem;
-  width: 100px;
+  width: 150px;
   outline: none;
+  font-size: 1rem;
 }
 .hero-right {
   height: 350px;
+  flex: 1;
 }
 .hero-right img {
   height: 100%;
@@ -141,9 +154,13 @@ nav ul li a:hover {
   width: 100%;
   justify-content: space-between;
   padding: 0rem 6rem;
+  flex-wrap: wrap;
 }
 .info-box {
   width: 300px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
 }
 .info-box p {
   font-family: "Roboto-Normal", sans-serif;
@@ -154,6 +171,8 @@ nav ul li a:hover {
   border-radius: 10px;
   overflow: hidden;
   height: 200px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .img-container img {
   width: 100%;
@@ -186,7 +205,6 @@ nav ul li a:hover {
 .background-container {
   background-color: #e5e7eb;
   color: #1f2937;
-  height: 30vh;
   padding: 4rem;
 }
 .background-container p {
@@ -209,9 +227,13 @@ nav ul li a:hover {
   padding: 3rem;
   border-radius: 10px;
   align-items: center;
+  gap: 4rem;
 }
 .action-left p {
   color: #e5e7eb;
+  font-size: 18px;
+  font-family: "RobotoRegular", sans-serif;
+  font-weight: 500;
 }
 .footer-section {
   background-color: #1f2937;
@@ -227,12 +249,17 @@ nav ul li a:hover {
   background-color: #3882f6;
   border: 2px solid #fff;
   border-radius: 10px;
+  width: 150px;
+  font-size: 1rem;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 699.9px) {
   .checkbtn {
     display: block;
+    position: fixed;
+    right: 0;
+    top: 2.5rem;
   }
   header {
     display: flex;
@@ -241,23 +268,19 @@ nav ul li a:hover {
   .logo-container {
     justify-content: flex-start;
   }
-  .hamburger {
-    position: fixed;
-    right: 0;
-    top: 2rem;
-  }
-  nav ul {
+
+  ul {
     position: fixed;
     top: 100px;
     flex-direction: column;
-    transition: all 0.5s;
-    background-color: #00000039;
+    background-color: #00000063;
     width: 100%;
-    left: 0;
-    display: none;
+    left: -100%;
+    padding: 1rem 0rem;
+    transition: all 0.5s;
   }
   #check:checked ~ ul {
-    left: -100px;
+    left: 0;
   }
   .first-page {
     margin: 0rem 1rem;
@@ -268,13 +291,15 @@ nav ul li a:hover {
     margin: 8rem 0rem 3rem;
   }
   .hero-left {
-    order: -1;
+    order: 1;
+    margin-bottom: 3rem;
   }
   .hero-right {
     width: 100%;
   }
   .hero-right img {
     width: 100%;
+    border-radius: 10px;
   }
   .information-section h1 {
     font-size: 24px;
@@ -288,15 +313,9 @@ nav ul li a:hover {
   }
   .info-box {
     width: 100%;
-    /* border: 1px solid #3882f6; */
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
   .info-box .img-container {
     width: 100%;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
   }
   .hero {
     height: auto;
@@ -320,8 +339,91 @@ nav ul li a:hover {
   .action-container {
     margin: 0rem;
     flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
   }
+
   .information-section {
     margin-top: 4rem;
+  }
+  .hero-left p,
+  .action-left p,
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+/* Tablet Design */
+
+@media screen and (min-width: 700px) and (max-width: 1096px) {
+  .first-page {
+    margin: 0rem 2rem;
+    height: auto;
+  }
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-left {
+    order: 1;
+    margin-bottom: 3rem;
+  }
+  .hero-left h1 {
+    font-size: 40px;
+  }
+  .hero-right {
+    width: 100%;
+  }
+  .hero-right img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .info-container {
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+  }
+  .info-box {
+    width: 350px;
+  }
+  .info-box .img-container {
+    width: 100%;
+  }
+  .info-container {
+    padding: 0rem 1rem;
+  }
+  .quote-section {
+    padding: 0rem 2rem;
+  }
+  .action-section {
+    padding: 0rem;
+  }
+  .action-container {
+    margin: 3rem;
+  }
+}
+
+@media screen and (min-width: 1097px) and (max-width: 1450px) {
+  .first-page {
+    margin: 0rem 2.5rem;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero-left h1 {
+    font-size: 42px;
+  }
+  .info-container {
+    padding: 0rem 2.5rem;
+    gap: 1.5rem;
+  }
+  .quote-section {
+    padding: 0rem 3.5rem;
+  }
+  .action-section {
+    padding: 0rem 1rem;
+  }
+  .action-container {
+    margin: 4rem;
   }
 }
