@@ -28,6 +28,9 @@
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
+img {
+  object-fit: cover;
+}
 body {
   margin: 0;
   padding: 0;
@@ -106,11 +109,13 @@ nav ul li a:hover {
   gap: 1rem;
   height: 350px;
   margin-bottom: 6rem;
+  flex-wrap: wrap;
 }
 .hero-left {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  flex: 1;
 }
 
 .hero-left h1 {
@@ -139,6 +144,7 @@ nav ul li a:hover {
 }
 .hero-right {
   height: 350px;
+  flex: 1;
 }
 .hero-right img {
   height: 100%;
@@ -248,12 +254,12 @@ nav ul li a:hover {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 699.9px) {
   .checkbtn {
     display: block;
     position: fixed;
     right: 0;
-    top: 2rem;
+    top: 2.5rem;
   }
   header {
     display: flex;
@@ -285,13 +291,15 @@ nav ul li a:hover {
     margin: 8rem 0rem 3rem;
   }
   .hero-left {
-    order: -1;
+    order: 1;
+    margin-bottom: 3rem;
   }
   .hero-right {
     width: 100%;
   }
   .hero-right img {
     width: 100%;
+    border-radius: 10px;
   }
   .information-section h1 {
     font-size: 24px;
@@ -305,7 +313,6 @@ nav ul li a:hover {
   }
   .info-box {
     width: 100%;
-    /* border: 1px solid #3882f6; */
   }
   .info-box .img-container {
     width: 100%;
@@ -332,7 +339,10 @@ nav ul li a:hover {
   .action-container {
     margin: 0rem;
     flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
   }
+
   .information-section {
     margin-top: 4rem;
   }
@@ -341,4 +351,53 @@ nav ul li a:hover {
   nav ul li a {
     font-size: 16px;
   }
+}
+/* Tablet Design */
+
+@media screen and (min-width: 700px) and (max-width: 1096px) {
+  .first-page {
+    margin: 0rem 2rem;
+    height: auto;
+  }
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+  .hero-left {
+    order: 1;
+    margin-bottom: 3rem;
+  }
+  .hero-right {
+    width: 100%;
+  }
+  .hero-right img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .info-container {
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+  }
+  .info-box {
+    width: 350px;
+  }
+  .info-box .img-container {
+    width: 100%;
+  }
+  .info-container {
+    padding: 0rem 1rem;
+  }
+  .quote-section {
+    padding: 0rem 2rem;
+  }
+  .action-section {
+    padding: 0rem;
+  }
+  .action-container {
+    margin: 3rem;
+  }
+}
+
+@media screen and (min-width: 1097px) and (max-width: 1450px) {
 }
