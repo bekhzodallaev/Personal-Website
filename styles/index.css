@@ -363,9 +363,13 @@ nav ul li a:hover {
     flex-direction: column;
     height: auto;
   }
+
   .hero-left {
     order: 1;
     margin-bottom: 3rem;
+  }
+  .hero-left h1 {
+    font-size: 40px;
   }
   .hero-right {
     width: 100%;
@@ -400,4 +404,26 @@ nav ul li a:hover {
 }
 
 @media screen and (min-width: 1097px) and (max-width: 1450px) {
+  .first-page {
+    margin: 0rem 2.5rem;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero-left h1 {
+    font-size: 42px;
+  }
+  .info-container {
+    padding: 0rem 2.5rem;
+    gap: 1.5rem;
+  }
+  .quote-section {
+    padding: 0rem 3.5rem;
+  }
+  .action-section {
+    padding: 0rem 1rem;
+  }
+  .action-container {
+    margin: 4rem;
+  }
 }
