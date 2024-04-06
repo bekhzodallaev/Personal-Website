@@ -1,0 +1,160 @@
+/* BELOW 1344px (Smaller desktops) */
+
+@media(max-width: 84em) {
+    .secondary-heading {
+        font-size: 3.9rem;
+    }
+
+    .services {
+        gap: 3.6rem;
+        padding: 3.6rem 6rem;
+    }
+
+    .tertiary-heading {
+        font-size: 2.5rem;
+    }
+
+    .services-text {
+        font-size: 2rem;
+    }
+
+    .services-list {
+        font-size: 1.6rem;
+    }
+
+    .service-image {
+        height: auto;
+        max-width: 28rem;
+    }
+}
+
+/* 940  Landskape tablets*/
+
+@media(max-width: 59em) {
+
+    .secondary-heading {
+        font-size: 3.2rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .container {
+        max-width: 78rem;
+        padding: 7.2rem;
+    }
+
+    .services {
+        gap: 2.4rem;
+        padding: 3.6rem 4.8rem;
+
+    }
+
+    .tertiary-heading {
+        font-size: 2.5rem;
+        margin-bottom: 1.6rem;
+
+    }
+
+    .services-text {
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+
+    .services-list {
+        font-size: 1.6rem;
+        line-height: 1.9;
+        margin-left: 2.4rem;
+    }
+
+    .service-image {
+        height: auto;
+        max-width: 15rem;
+    }
+}
+
+/*  TABLETS 740px */
+@media(max-width:47em) {
+    .header {
+        padding: 0.8rem 0;
+    }
+
+    .navigation {
+        gap: 1.6rem;
+    }
+
+    .container {
+        max-width: 65rem;
+        padding: 3.6rem 1.2rem;
+    }
+
+    .secondary-heading {
+        font-size: 2.5rem;
+    }
+
+    .services {
+        gap: 1.2rem;
+        padding: 0.8rem 1.6rem;
+    }
+
+    .tertiary-heading {
+        font-size: 2rem;
+        line-height: 1.7;
+    }
+
+    .services-text {
+        font-size: 1.28rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .services-list {
+        font-size: 1.28rem;
+        margin-left: 1.2rem;
+    }
+
+    .service-image {
+        max-width: 4.7rem;
+        border-radius: 0.6rem;
+        display: none;
+        visibility: hidden;
+
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 1.7;
+    }
+}
+
+/* MOBILE PHONES 396px  */
+
+@media(max-width:24.7em) {
+    .container {
+        max-width: 36rem;
+        padding: 1.6rem 0;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .services {
+        gap: 0.6rem;
+        padding: 0.6rem 0.8rem;
+    }
+
+    .tertiary-heading {
+        font-size: 2rem;
+        line-height: 1.9;
+    }
+
+    .services-list {
+        font-size: 1.28rem;
+        line-height: 1.9;
+        margin-left: 1.2rem;
+    }
+
+    .footer-navigation {
+        margin-left: 0;
+    }
+
+}
