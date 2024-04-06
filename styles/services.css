@@ -43,60 +43,12 @@ body {
     color: #333
 }
 
-/* 
-FONT-SIZE SYSTEM
-
-12.8/16/20/25/31.3/39.1/48.8
-
-1.8rem
-2.4rem
-39
-
-LINE HEIGHT
-1.6
-1.8
-
-PRIMARY COLOR: #1F2937
-
-
-
-TINTS AND SHADES
-
-
-tints
-#E5E7EB
-#F9FAF8
-
-shades
-#1F2937
-
-
-greys
-#333
-
-SPACING SYSTEM
-
-2/4/6/8/ 12/ 16/ 24/ 36/ 48/ 60/ 72/ 84 / 96 
-
-8
-16
-84
-36
-
-LETTER SPACING
--0.3px
-
-*/
-
-
-
 .header {
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem;
-    padding: 3.2rem 1.2rem;
+    padding: 3.2rem 9.6rem;
 
 }
 
