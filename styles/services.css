@@ -91,7 +91,6 @@ body {
 .logo-link:active,
 .logo-link:hover {
     color: #E5E7EB;
-    text-decoration: dotted;
     transition: all 0.5s ease-in;
 }
 

@@ -1,3 +1,5 @@
+/* BELOW 1344px (Smaller desktops) */
+
 @media(max-width: 84em) {
     .secondary-heading {
         font-size: 3.9rem;
@@ -25,6 +27,8 @@
         max-width: 28rem;
     }
 }
+
+/* 940  Landskape tablets*/
 
 @media(max-width: 59em) {
 
@@ -67,6 +71,7 @@
     }
 }
 
+/*  TABLETS 740px */
 @media(max-width:47em) {
     .header {
         padding: 0.8rem 0;
@@ -120,6 +125,8 @@
     }
 }
 
+/* MOBILE PHONES 396px  */
+
 @media(max-width:24.7em) {
     .container {
         max-width: 36rem;
@@ -136,7 +143,7 @@
     }
 
     .tertiary-heading {
-        font-size: 1.6rem;
+        font-size: 2rem;
         line-height: 1.9;
     }
 
