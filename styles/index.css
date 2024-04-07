@@ -30,6 +30,7 @@
 }
 img {
   object-fit: cover;
+  border-radius: 0.5em;
 }
 body {
   margin: 0;
@@ -475,22 +476,28 @@ nav ul li a:hover {
   }
 }
 
-/* ------------ MAIN SECTION ------------- */
+/*------------------------------- join ----------------------------  */
 
-.home__navbar
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav__items
 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
-  background-color: #1f2937;
-  font-size: 2em;
 }
 
-.home__navbar a
+.about__nav
 {
-  text-decoration: none;
-  color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f2937;
+  padding: 1em 6em 1em 6em;
 }
 
 .about__container
@@ -500,7 +507,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
 }
-/* #1f2937 */
+
 .about__info
 {
   padding: 1em;
@@ -516,22 +523,27 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-.about__slogan
-{
-  text-align: center;
-}
-
-.about__slogan h1
-{
-  color: #1f2937dd;
-}
-
 .about__text
 {
+  justify-content: center;
+  border-radius: 1em;
+  align-items: center;
+  display: flex;
   padding: 1em;
   margin: 1em;
   font-size: 2em;
   text-align: center;
+  background-color: #E5E7EB;
+  gap: 3em;
+}
+
+
+.about__text p
+{
+  letter-spacing: 3px;
+  font-size: 0.8em;
+  color: gray;
+  font-weight: 300;
 }
 
 .about__text h1
@@ -539,11 +551,11 @@ nav ul li a:hover {
   font-size: 1.3em;
   color: gray;
   font-weight: 400;
+  padding-bottom: 1em;
 }
 
 .wave
 {
-  /* border: 1px solid blue; */
   width: 100%;
 }
 
@@ -571,7 +583,6 @@ nav ul li a:hover {
 
 .experience__phrase
 {
-  /* border: 1px solid red; */
   padding: 1em;
   width: 70%;
 }
@@ -705,7 +716,6 @@ nav ul li a:hover {
 
 .team__description
 {
-  /* border: 1px solid red; */
   text-align: center;
 }
 
@@ -727,19 +737,38 @@ nav ul li a:hover {
 
 /* -------------- RESPONSIVE DESIGN -------------- */
 
-/* ... */
-
-/* Media query para pantallas pequeñas */
 @media screen and (max-width: 768px)
 {
+  /* Navigation */
+
+  .about__nav
+  {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #1f2937;
+    top: 0;
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    height: 20vh;
+    left: 0;
+  }
+
   .wave
   {
     height: 30%;
   }
+  
+  .about__text
+  {
+    flex-direction: column;
+    margin-top: 7em;
+  }
 
   .about__text h1
   {
-    font-size: 0.6em;
+    font-size: 1em;
   }
 
   .wave
@@ -754,9 +783,19 @@ nav ul li a:hover {
     height: 50%;
   }
 
+  .about__banner
+  {
+    width: 100%;
+  }
+
   .experience__phrase h2
   {
     font-size: 2em;
+  }
+
+  .experience__text p
+  {
+    font-size: 1.3em;
   }
 
   /* SKILLS SECTION */
