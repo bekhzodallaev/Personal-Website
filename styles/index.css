@@ -42,14 +42,13 @@ body {
   padding: 0;
 }
 
-.background {
-  background-color: #1f2937;
-  width: 100%;
-}
-
 header {
   display: flex;
   justify-content: space-between;
+  background-color: #1f2937;
+  width: 100%;
+  padding: 1.8em 6em 1.8em 6em;
+  border-bottom: 2px solid #1f2937;
 }
 
 button {
@@ -84,6 +83,10 @@ button {
   margin: 1rem;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
 nav ul {
   display: flex;
   gap: 2rem;
@@ -126,12 +129,13 @@ nav ul li a:hover {
 .hero {
   display: flex;
   justify-content: space-between;
-  margin-top: 6rem;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
   height: 350px;
-  margin-bottom: 6rem;
   flex-wrap: wrap;
+  padding: 6rem;
+  background-color: #1f2937;
+  height: auto;
 }
 
 .hero-left {
@@ -185,6 +189,7 @@ nav ul li a:hover {
 
 .hero-right img {
   height: 100%;
+  width: 100%;
 }
 
 .info-container {
@@ -197,8 +202,7 @@ nav ul li a:hover {
 
 .info-box {
   width: 300px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border: 2px solid #3882f6;
   border-radius: 10px;
 }
 
@@ -207,8 +211,8 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.img-container {
-  width: 300px;
+.info-box img {
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
   height: 200px;
@@ -216,24 +220,12 @@ nav ul li a:hover {
   border-bottom-right-radius: 0;
 }
 
-.img-container img {
-  width: 100%;
-  height: 100%;
-}
-
-.first-page {
-  height: 100vh;
-  background-color: #1f2937;
-  margin: 0rem 6rem;
-  padding-top: 2rem;
-}
-
 .information-section {
   width: 100%;
   background-color: #fff;
 }
 
-.information-section h1 {
+.information-section h2 {
   text-align: center;
   font-size: 36px;
   font-family: "Roboto", sans-serif;
@@ -241,47 +233,35 @@ nav ul li a:hover {
 }
 
 .quote-section {
-  padding: 0rem 8rem;
+  padding: 4rem 17rem;
   margin-top: 6rem;
+  background-color: #e5e7eb;
 }
 
-.quote-section h2 {
+.quote-section blockquote {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-}
-
-.background-container {
-  background-color: #e5e7eb;
-  color: #1f2937;
-  padding: 4rem;
-}
-
-.background-container p {
+  font-size: 36px;
   color: #1f2937;
 }
 
 .quote-section p {
   text-align: right;
+  color: #1f2937;
 }
 
 .action-section {
-  width: 100%;
-  margin: 6rem 0rem;
-  padding: 4rem;
-}
-
-.action-container {
+  margin: 6rem 12rem;
+  padding: 3rem;
   background-color: #3882f6;
   color: #fff;
-  margin: 0rem 8rem;
   display: flex;
   justify-content: space-between;
-  padding: 3rem;
   border-radius: 10px;
   align-items: center;
-  gap: 4rem;
+  box-sizing: border-box;
+  gap: 3rem;
 }
-
 .action-left p {
   color: #e5e7eb;
   font-size: 18px;
@@ -355,18 +335,15 @@ nav ul li a:hover {
     transition: all 0.5s;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
-  }
-
-  .first-page {
-    margin: 0rem 1rem;
-    height: auto;
   }
 
   .hero {
     flex-direction: column;
     margin: 8rem 0rem 3rem;
+    padding: 1rem;
+    width: 100%;
   }
 
   .hero-left {
@@ -383,7 +360,7 @@ nav ul li a:hover {
     border-radius: 10px;
   }
 
-  .information-section h1 {
+  .information-section h2 {
     font-size: 24px;
   }
 
@@ -393,13 +370,14 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    flex-wrap: nowrap;
   }
 
   .info-box {
     width: 100%;
   }
 
-  .info-box .img-container {
+  .info-box .img {
     width: 100%;
   }
 
@@ -413,25 +391,18 @@ nav ul li a:hover {
 
   .quote-section {
     margin: 2rem 0rem;
-    padding: 0;
-    width: 100%;
-  }
-
-  .quote-section .background-container {
     padding: 2rem;
     width: 100%;
-    height: auto;
+  }
+  .quote-section blockquote {
+    font-size: 24px;
   }
 
   .action-section {
-    margin: 3rem 0rem;
-  }
-
-  .action-container {
-    margin: 0rem;
+    margin: 3rem 2rem;
+    padding: 1.5rem 1rem;
     flex-direction: column;
-    gap: 1rem;
-    justify-content: flex-start;
+    gap: 2rem;
   }
 
   .information-section {
@@ -450,30 +421,21 @@ nav ul li a:hover {
     font-size: 1rem;
   }
 
-  .action-container {
-    padding: 1.5rem 1rem;
-    justify-content: center;
-  }
-
-  .action-left h1,
+  .action-left h3,
   .action-left p {
     text-align: center;
-  }
-
-  .action-section {
-    padding: 1rem;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1096px) {
-  .first-page {
-    margin: 0rem 2rem;
-    height: auto;
+  header {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
-
   .hero {
     flex-direction: column;
     height: auto;
+    padding: 3rem;
   }
 
   .hero-left {
@@ -508,24 +470,21 @@ nav ul li a:hover {
     width: 350px;
   }
 
-  .info-box .img-container {
-    width: 100%;
-  }
-
   .info-container {
     padding: 0rem 1rem;
   }
 
   .quote-section {
-    padding: 0rem 2rem;
+    padding: 2rem 8rem;
+  }
+  .quote-section blockquote {
+    font-size: 28px;
   }
 
   .action-section {
-    padding: 0rem;
-  }
-
-  .action-container {
-    margin: 3rem;
+    padding: 1.5rem 2rem;
+    margin: 3rem 6rem;
+    gap: 2rem;
   }
 
   .action-right button {
@@ -534,10 +493,6 @@ nav ul li a:hover {
 }
 
 @media screen and (min-width: 1097px) and (max-width: 1450px) {
-  .first-page {
-    margin: 0rem 2.5rem;
-  }
-
   .hero {
     height: auto;
   }
@@ -552,14 +507,11 @@ nav ul li a:hover {
   }
 
   .quote-section {
-    padding: 0rem 3.5rem;
+    padding: 3.5rem 10rem;
   }
 
   .action-section {
-    padding: 0rem 1rem;
-  }
-
-  .action-container {
-    margin: 4rem;
+    padding: 2rem 2.5rem;
+    margin: 6rem 8rem;
   }
 }
