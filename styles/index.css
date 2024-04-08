@@ -282,12 +282,11 @@ nav ul li a:hover {
   color: #fff;
   padding: 0.5rem 1rem;
   background-color: #3882f6;
-  box-shadow: rgba(255, 255, 255, 1) 0px 1px 4px;
+  border: 2px solid #fff;
   border-radius: 10px;
   width: 150px;
   font-size: 1rem;
   transition: 0.5s;
-  border: none;
 }
 
 .action-right button:hover {
