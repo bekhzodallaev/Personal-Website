@@ -160,12 +160,15 @@ body {
     border-radius: 1.6rem;
 }
 
-.footer {
+.footer-section {
+    flex-direction: column;
     color: #F9FAF8;
     background-color: #1F2937;
+    align-items: center;
 }
 
 .footer-navigation {
+
     margin-left: auto;
     max-width: 25.1rem;
 }
