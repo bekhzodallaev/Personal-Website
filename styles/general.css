@@ -1,94 +1,97 @@
 .header {
-    background-color: #1F2937;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2.6rem 9.6rem 2.8rem 9.6rem;
-    border-bottom: 2px solid #1f2937;
-
+  background-color: #1f2937;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.6rem 9.6rem 2.8rem 9.6rem;
+  border-bottom: 2px solid #1f2937;
 }
 
 nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .checkbtn {
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    margin-right: 20px;
-    cursor: pointer;
-    display: none;
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
 }
 
 #check {
-    display: none;
+  display: none;
 }
 
-
 nav ul {
-    display: flex;
-    gap: 3.2rem;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
 }
 
 nav ul li a {
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-family: "RobotoRegular";
-    font-weight: 400;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family: "RobotoRegular";
+  font-weight: 400;
+  color: #e5e7eb;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: #3882f6;
+  transition: 0.5s;
 }
 
 .footer-section {
-    background-color: #1f2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    color: #e5e7eb;
-
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  color: #e5e7eb;
 }
 
 .logo-link {
-    display: flex;
-    align-items: center;
-    font-family: "RobotoBold";
-    gap: 0.8rem;
-    font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-family: "RobotoBold";
+  gap: 0.8rem;
+  font-weight: bold;
 }
 
 .logo-link:link,
 .logo-link:visited {
-    text-decoration: none;
-    color: #F9FAF8;
+  text-decoration: none;
+  color: #f9faf8;
 }
 
 .logo-link:hover {
-    color: #E5E7EB;
-    transition: all 0.5s ease-in;
+  color: #e5e7eb;
+  transition: all 0.5s ease-in;
 }
 
 .logo-link:active {
-    color: #3882f6;
-    transition: all 0.5s;
+  color: #3882f6;
+  transition: all 0.5s;
 }
 
 .nav-link:link,
 .nav-link:active {
-    text-decoration: none;
-    color: #F9FAF8;
+  text-decoration: none;
+  color: #f9faf8;
 }
 
 .nav-link:active {
-    color: #E5E7EB;
-    transition: all 0.3ms ease-in;
+  color: #e5e7eb;
+  transition: all 0.3ms ease-in;
 }
 
 .nav-link:hover {
-    color: #3882f6;
-    transition: all 0.3ms ease-in;
+  color: #3882f6;
+  transition: all 0.3ms ease-in;
 }
